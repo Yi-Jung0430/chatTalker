@@ -1,0 +1,39 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1rem; // 16px
+}
+
+
+// img RWD
+img {
+    min-width: 100%;
+    height: auto;
+    display: block;
+}
+
+// a連結
+a {
+    display: block;
+    text-decoration: none;
+}
+
+// sub
+sub {
+    vertical-align: sub;
+}
+
+// container 
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
