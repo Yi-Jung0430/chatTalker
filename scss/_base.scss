@@ -9,12 +9,13 @@ html {
 body {
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 1rem; // 16px
+    position: relative;
 }
 
 
 // img RWD
 img {
-    min-width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
 }
@@ -37,3 +38,4 @@ sub {
     padding-left: 16px;
     padding-right: 16px;
 }
+

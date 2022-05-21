@@ -1,1 +1,263 @@
-/* No CSS *//*# sourceMappingURL=all.css.map */
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 1rem;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+sub {
+  vertical-align: sub;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.logo-img {
+  background-image: url(../img/logo.png);
+  height: 40px;
+  width: 220px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-indent: 101%;
+  /*首行縮排*/
+  overflow: hidden;
+  /*自動隱藏超出的文字或圖片*/
+  white-space: nowrap;
+  /*希望元素在第一排上面，沒有斷行*/
+}
+
+.footer {
+  background-color: #F5F5F5;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+  color: #221E1F;
+  font-weight: 400;
+}
+
+.secondary-btn {
+  background: #FF5D50 0% 0% no-repeat padding-box;
+  border-radius: 22px;
+  color: #FFFFFF;
+  padding: 8px 32px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.header-bg {
+  position: relative;
+}
+
+.bg_home {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner-img {
+  width: 532px;
+}
+
+.banner-h6 {
+  color: #56C4C5;
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 29px;
+  font-weight: 700;
+}
+
+.banner-h2 {
+  color: #221E1F;
+  font-size: 48px;
+  letter-spacing: 0px;
+  line-height: 70px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.banner-h5 {
+  color: #221E1F;
+  font-size: 20px;
+  letter-spacing: 0px;
+  line-height: 29px;
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+.ball01 {
+  position: absolute;
+  left: -15%;
+  z-index: -1;
+}
+
+.social {
+  margin-top: 100px;
+}
+
+.social-h3 {
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  color: #221E1F;
+  font-weight: 700;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-right: -8px;
+  margin-left: -8px;
+  margin-top: 48px;
+}
+
+.social-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33.333%;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+
+.social-img {
+  width: 90px;
+  height: 90px;
+}
+
+.social-title {
+  margin-top: 24px;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  color: #221E1F;
+  font-weight: 700;
+}
+
+.social-text {
+  margin-top: 24px;
+  color: #747474;
+  line-height: 24px;
+  font-weight: 400;
+}
+/*# sourceMappingURL=all.css.map */

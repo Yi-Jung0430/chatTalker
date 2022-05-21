@@ -20,8 +20,8 @@ $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberati
 $font-weight-regular:          400 !default;
 $font-weight-bold:            700 !default;
 
-$base-font-size: 4px;  
-$font-m: $base-font-size*  4;//預設字型大小
+$font-size-base: 4px;  
+$font-m: $font-size-base*  4;//預設字型大小
 
 $h1-font-size:                $font-size-base * 1 !default;
 $h2-font-size:                $font-size-base * 12 !default; //48px

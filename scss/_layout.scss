@@ -1,1 +1,37 @@
 // 版型相關的 header、footer、導覽列、側邊欄，每個頁面都使用到的部分
+
+// navbar+header
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.logo {
+    &-img {
+        background-image: url(../img/logo.png);
+        height: 40px;
+        width: 220px;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        // 圖片取代文字
+        text-indent:101%; /*首行縮排*/
+        overflow:hidden; /*自動隱藏超出的文字或圖片*/
+        white-space:nowrap; /*希望元素在第一排上面，沒有斷行*/
+    }
+}
+
+
+// footer
+.footer {
+    background-color: $gray;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    color: $black;
+    font-weight: $font-weight-regular;
+
+}
