@@ -53,6 +53,12 @@
     left: -15%;
     z-index: -1;
 }
+.ball02 {
+    position: absolute;
+    right: -3%;
+    top: 415%;
+    z-index: -1;
+}
 
 // 三大平台
 .social {
@@ -127,6 +133,7 @@
         margin-top: 48px;
     }
     &-card {
+        background: $white;
         width: 25%;
         margin-right: 8px;
         margin-left: 8px;

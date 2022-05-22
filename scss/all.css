@@ -65,7 +65,6 @@ html {
 body {
   font-family: 'Noto Sans TC', sans-serif;
   font-size: 1rem;
-  position: relative;
 }
 
 img {
@@ -197,6 +196,13 @@ sub {
   z-index: -1;
 }
 
+.ball02 {
+  position: absolute;
+  right: -3%;
+  top: 415%;
+  z-index: -1;
+}
+
 .social {
   margin-top: 100px;
 }
@@ -295,6 +301,7 @@ sub {
 }
 
 .role-card {
+  background: #FFFFFF;
   width: 25%;
   margin-right: 8px;
   margin-left: 8px;
