@@ -198,8 +198,8 @@ sub {
 
 .ball02 {
   position: absolute;
-  right: -3%;
-  top: 415%;
+  right: -20%;
+  top: 80%;
   z-index: -1;
 }
 
@@ -269,6 +269,7 @@ sub {
 
 .role {
   margin-top: 100px;
+  position: relative;
 }
 
 .role-h3 {

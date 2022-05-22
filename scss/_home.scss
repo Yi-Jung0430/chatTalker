@@ -55,8 +55,8 @@
 }
 .ball02 {
     position: absolute;
-    right: -3%;
-    top: 415%;
+    right: -20%;
+    top: 80%;
     z-index: -1;
 }
 
@@ -110,6 +110,7 @@
 // 任何角色
 .role {
     margin-top: 100px;
+    position: relative;
     &-h3 {
         font-size: $h3-font-size;
         line-height: 46px;
