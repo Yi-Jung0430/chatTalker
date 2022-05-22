@@ -198,7 +198,7 @@ sub {
 
 .ball02 {
   position: absolute;
-  right: -20%;
+  left: 90%;
   top: 80%;
   z-index: -1;
 }
