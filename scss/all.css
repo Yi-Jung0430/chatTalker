@@ -127,6 +127,12 @@ sub {
   font-weight: 400;
 }
 
+.top {
+  position: fixed;
+  right: 5%;
+  top: 90%;
+}
+
 .secondary-btn {
   background: #FF5D50 0% 0% no-repeat padding-box;
   border-radius: 22px;
@@ -277,6 +283,7 @@ sub {
 .role {
   margin-top: 100px;
   position: relative;
+  overflow: hidden;
 }
 
 .role-h3 {
