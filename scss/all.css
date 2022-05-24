@@ -555,4 +555,10 @@ sub {
 .subscription-button:hover {
   background-color: #2e8687;
 }
+
+.products-header-bg {
+  position: relative;
+  border-radius: 0px 0px 0px 300px;
+  background-color: #F7F9FD;
+}
 /*# sourceMappingURL=all.css.map */
