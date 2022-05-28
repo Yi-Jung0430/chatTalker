@@ -159,6 +159,14 @@ sub {
   top: 90%;
 }
 
+@media screen and (max-width: 376px) {
+  .top {
+    position: fixed;
+    right: 5%;
+    top: 80%;
+  }
+}
+
 .secondary-btn {
   background: #FF5D50 0% 0% no-repeat padding-box;
   border-radius: 22px;
@@ -796,6 +804,23 @@ sub {
 
 .subscription-button:hover {
   background-color: #2e8687;
+}
+
+@media screen and (max-width: 376px) {
+  .subscription {
+    background-image: url(../img/home_footer.svg);
+    margin-top: 60px;
+    padding-top: 293px;
+    padding-bottom: 60px;
+  }
+  .subscription-h3 {
+    font-size: 24px;
+    line-height: 35px;
+    padding-top: 50px;
+  }
+  .subscription-button {
+    margin-top: 24px;
+  }
 }
 
 .products-header-bg {

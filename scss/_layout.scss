@@ -59,3 +59,11 @@
     right: 5%;
     top: 90%;
 }
+
+@media screen and (max-width: 376px) {
+    .top {
+        position: fixed;
+        right: 5%;
+        top: 80%;
+    }
+}
