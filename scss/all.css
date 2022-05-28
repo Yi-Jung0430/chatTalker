@@ -299,6 +299,15 @@ sub {
   z-index: -1;
 }
 
+@media screen and (max-width: 376px) {
+  .ball01 {
+    left: -53%;
+    top: 103%;
+    z-index: -1;
+    height: 126px;
+  }
+}
+
 .social {
   margin-top: 100px;
 }
@@ -318,8 +327,8 @@ sub {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-right: -8px;
   margin-left: -8px;
   margin-top: 48px;
@@ -361,6 +370,69 @@ sub {
   color: #747474;
   line-height: 24px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 376px) {
+  .social {
+    margin-top: 60px;
+  }
+  .social-h3 {
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    color: #221E1F;
+    font-weight: 700;
+  }
+  .social-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 32px;
+  }
+  .social-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  .social-card:not(:first-child) {
+    margin-top: 24px;
+  }
+  .social-img {
+    width: 60px;
+    height: 60px;
+  }
+  .social-title {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #221E1F;
+    font-weight: 700;
+  }
+  .social-text {
+    margin-top: 16px;
+    color: #747474;
+    line-height: 24px;
+    font-weight: 400;
+  }
 }
 
 .role {
