@@ -723,6 +723,39 @@ sub {
   top: -60px;
 }
 
+@media screen and (max-width: 376px) {
+  .evaluation {
+    margin-top: 60px;
+  }
+  .evaluation-h3 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .evaluation-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 88px;
+  }
+  .evaluation-card {
+    padding: 48px 16px 16px 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+  .evaluation-card:not(:first-child) {
+    display: none;
+  }
+  .evaluation-userName {
+    margin-top: 16px;
+    line-height: 8px;
+  }
+}
+
 .subscription {
   background-image: url(../img/home_footer.svg);
   background-position: center;

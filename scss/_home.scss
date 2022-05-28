@@ -472,6 +472,36 @@
     }
 }
 
+@media screen and (max-width: 376px) {
+    .evaluation {
+        margin-top: 60px;
+        &-h3 {
+            font-size: 28px;
+            line-height: 40px;
+        }
+        &-list {
+            display: flex;
+            flex-wrap: nowrap;
+            margin-right: 0;
+            margin-left: 0;
+            margin-top: 88px;
+        }
+        &-card {
+            padding: 48px 16px 16px 16px;
+            margin-left: 0px;
+            margin-right: 0px;
+            width: 100%;
+        }
+        &-card:not(:first-child) {
+            display: none;
+        }
+        &-userName{
+            margin-top: 16px;
+            line-height: 8px;
+        }
+    }
+}
+
 // 訂閱區塊
 .subscription {
     background-image: url(../img/home_footer.svg);
