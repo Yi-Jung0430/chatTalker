@@ -3,6 +3,14 @@
     background-position: 1150px 1500px;
     background-repeat: no-repeat;
 }
+@media screen and (max-width: 376px) {
+    .body-bg {
+        background-position: 120% 1500px;
+        height: 135px;
+        background-size: contain;
+        z-index: 1000;
+    }
+}
 
 .header-bg {
     position: relative;
@@ -68,28 +76,19 @@
         }
     
         &-h6 {
-            color: $primary;
-            font-size: 16px; 
-            letter-spacing: 0px;
+            font-size: 16px;
             line-height: 24px;
-            font-weight: $font-weight-bold;
         }
     
         &-h2 {
-            color: $black;
-            font-size: 32px; 
-            letter-spacing: 0px;
+            font-size: 32px;
             line-height: 46px;
-            font-weight: $font-weight-bold;
             margin-top: 8px;
         }
     
         &-h5 {
-            color: $black;
             font-size: 16px; 
-            letter-spacing: 0px;
             line-height: 29px;
-            font-weight: $font-weight-regular;
             margin-top: 16px;
         }
         &-sm-bg {
@@ -109,12 +108,6 @@
     left: -15%;
     z-index: -1;
 }
-.ball02 {
-    position: absolute;
-    left: 90%;
-    top: 80%;
-    z-index: -1;
-}
 .ball03 {
     position: absolute;
     left: -6%;
@@ -126,7 +119,6 @@
     .ball01 {
         left: -53%;
         top:103%;
-        z-index: -1;
         height: 126px;
     }
 }
@@ -184,26 +176,16 @@
         &-h3 {
             font-size: 28px;
             line-height: 40px;
-            text-align: center;
-            color: $black;
-            font-weight: $font-weight-bold;
         }
         &-list {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
             margin-right: 0;
             margin-left: 0;
             margin-top: 32px;
         }
         &-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             width: 100%;
             padding-left: 0;
             padding-right: 0;
-            text-align: center;
         }
 
         &-card:not(:first-child) {
@@ -217,15 +199,10 @@
             margin-top: 16px;
             font-size: 18px;
             line-height: 26px;
-            text-align: center;
-            color: $black;
-            font-weight: $font-weight-bold;
         }
         &-text {
             margin-top: 16px;
-            color: #747474;
             line-height: 24px;
-            font-weight: $font-weight-regular;
         }
     }
 }
@@ -253,6 +230,7 @@
     &-list {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin-right: -8px;
         margin-left: -8px;
         margin-top: 48px;
@@ -275,12 +253,45 @@
         color: $primary;
         line-height: 24px;
         text-align: center;
+        font-weight: $font-weight-bold;
     }
     &-text {
         color: $black;
         margin-top: 16px;
         line-height: 24px;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .role {
+        margin-top: 60px;
+        &-h3 {
+            font-size: 28px;
+            line-height: 40px;
+        }
+        &-h4 {
+            line-height: 26px;
+            font-size: 18px;
+        }
+        &-list {
+            margin-top: 32px;
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+        &-card {
+            width: 100%;
+            margin-right: 8px;
+            margin-left: 8px;
+            
+        }
+        &-card:not(:first-child) {
+            margin-top: 24px;
+        }
+        &-title {
+            line-height: 24px;
+            font-size: 16px;
+        }
     }
 }
 
@@ -354,12 +365,56 @@
         border-radius: 27px;
         display: inline-block;
         transition: all .3s;
+        font-size: 18px;
     }
     &-button:hover {
         background-color: darken($primary, 20%);
        
     }
+}
 
+@media screen and (max-width: 376px) {
+    .products {
+        flex-direction: column-reverse;
+        margin-top: 60px;
+        &-list {
+            width: 100%;
+            
+        }
+        &-item {
+            width: 100%;
+            padding-right: 0;
+            margin-right: 52px;
+            margin-left: 52px;
+            
+        }
+        &-item:not(:first-child) {
+            margin-top: 24px;
+        }
+        &-item:first-child {
+            margin-top: 32px;
+        }
+        &-introduce {
+            width: 100%;
+        }
+        &-introduce {
+            align-items: center;
+        }
+        &-h3 {
+            font-size: 28px;
+            line-height: 40px;
+            text-align: center;
+        }
+        &-h6 {
+            font-size: 16px;
+            font-weight: $font-weight-regular;
+            line-height: 24px;
+            text-align: center;
+        }
+        &-link {
+            margin-top: 16px;
+        }
+    }
 }
 
 // 好評如潮
