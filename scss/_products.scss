@@ -3,3 +3,292 @@
     border-radius: 0px 0px 0px 300px;
     background-color: #F7F9FD;
 }
+.products-body-img {
+    position: absolute;
+    z-index: 10;
+    right: 50px;
+}
+.products-body-sm-img {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    right:0;
+}
+@media screen and (max-width: 376px) {
+    .products-body-sm-img {
+        display: block;
+    }
+    
+    .products-body-img {
+        display: none;
+    }
+}
+.products-banner {
+    z-index: 1000;
+    padding-top: 92px;
+    padding-bottom: 180px;
+    &-h2 {
+        color: $black;
+        font-size: $h2-font-size;
+        letter-spacing: 0px;
+        line-height: 70px;
+        font-weight: $font-weight-bold;
+        margin-top: 8px;
+    }
+
+    &-h5 {
+        color: $black;
+        font-size: $h5-font-size;
+        letter-spacing: 0px;
+        line-height: 29px;
+        font-weight: $font-weight-regular;
+        margin-top: 16px;
+    }
+    
+}
+@media screen and (max-width: 376px) {
+    .products-header-bg {
+        border-radius: 0px 0px 0px 150px;
+    }
+    .products-banner {
+        padding-top: 48px;
+        padding-bottom: 361px;
+        background-image: url(../img/banner_sm.svg);
+        background-repeat: no-repeat;
+        // margin-right: -10px;
+        margin-left: -10px;
+        background-size: cover;
+        &-title {
+            // margin-right: 10px;
+            margin-left: 10px;
+        }
+        &-h2 {
+            font-size: 32px;
+            line-height: 46px;
+            margin-top: 8px;
+        }
+    
+        &-h5 {
+            font-size: 16px; 
+            line-height: 29px;
+            margin-top: 16px;
+        }
+        
+    }
+}
+
+// 選擇方案 program
+.program {
+    margin-top: 100px;
+    &-h3 {
+        font-size: $h3-font-size;
+        line-height: 46px;
+        text-align: center;
+        color: $black;
+        font-weight: $font-weight-bold;  
+    }
+    &-number-list {
+        margin-top: 48px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    &-number-card {
+        border: 1px solid #56C4C5;
+        border-radius: 27px;
+        padding: 12px 32px;
+        transition: all .3s;
+        cursor: pointer;
+        white-space:nowrap;
+    }
+    &-number-card:not(:last-child) {
+        margin-right: 16px;
+    }
+    &-number-card:not(:first-child) {
+        color: $primary;
+    }
+    &-number-card:first-child {
+        color: #fff;
+        background-color: $primary;
+    }
+    &-number-card:hover {
+        color: #fff;
+        background-color: $primary;
+    }
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 54px;
+        margin-right: -8px;
+        margin-left: -8px;
+        justify-content: center;
+        
+
+    }
+    &-card {
+        box-shadow: 0px 2px 10px #00000014;
+        border-radius: 12px;     
+        width: 39%;
+        margin-right: 8px;
+        margin-left: 8px; 
+        padding: 16px 24px 32px 24px;;      
+    }
+    &-h4 {
+        text-align: center;
+        font-size: 24px;
+        letter-spacing: 0px;
+        color: $black;
+        line-height: 35px;
+        font-weight: $font-weight-bold;
+        border-bottom:  1px solid #DDDDDD;
+        padding-bottom: 16px;
+    }
+    &-text {
+        line-height: 24px;
+        color: $black;
+        font-weight: $font-weight-regular;
+        text-align: center;
+        margin-top: 32px;
+    }
+    &-area {
+        margin-top: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .little-card {
+        background: #F5F5F5 0% 0% no-repeat padding-box;
+        border-radius: 12px;   
+        width: 100%; 
+        padding-top: 24px;
+        padding-bottom: 24px;
+        text-align: center;
+    }
+
+    .equal {
+        font-size: 29px;
+        line-height: 42px;
+        margin-right: 21px;
+        margin-left: 21px;
+    }
+    &-small-title {
+        font-size: 12px;
+        line-height: 17px;
+        color: $black;
+    }
+    &-number {
+        font-size: 32px;
+        line-height: 35px;
+        margin-top: 8px;
+        sub {
+            font-size: 12px;
+            line-height: 17px;
+        }
+    }
+    &-more {
+        margin-top: 32px;
+    }
+    .inline-icon, .inline-text {
+        display: inline-block;
+        margin-right: 8px;
+    }
+    .inline-text {
+        line-height: 24px;
+        color: black;
+    }
+    &-more-list:not(:first-child) {
+        margin-top: 16px;
+    }
+    &-btn {
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+    }
+    &-link {
+        text-align: center;
+        font-size: 18px;
+        line-height: 26px;
+        padding: 12px 32px;
+        background-color: $primary;
+        color:#fff;
+        border: 1px solid #56C4C5;
+        border-radius: 27px;
+        transition: all .3s;
+    }
+    &-link:hover {
+        background-color: darken($primary, 20%);
+       
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .program {
+        margin-top: 60px;
+        overflow: hidden;
+        &-h3 {
+            font-size: 28px;
+            line-height: 40px; 
+        }
+        &-number-list {
+            margin-top: 24px;
+            margin-left: 16px;
+            justify-content: start;
+            max-width: 375px;
+        }
+        &-number-card:not(:last-child) {
+            margin-right: 6px;
+        }
+        &-number-card {
+            padding: 8px 16px;
+        }
+        &-list {
+            margin-top: 32px;
+            margin-right: 0;
+            margin-left: 0;
+        }
+        &-card {    
+            width: 100%;
+            margin-right: 0px;
+            margin-left: 0px; 
+            padding: 16px 16px 24px 16px;      
+        }
+        &-card:last-child {    
+            margin-top: 24px;    
+        }
+        &-text {
+            margin-top: 24px;
+        }
+        &-area {
+            margin-top: 24px;
+        }
+        .little-card {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+        .equal {
+            font-size: 24px;
+            line-height: 35px;
+            margin-right: 6px;
+            margin-left: 6px;
+        }
+        &-small-title {
+            font-size: 12px;
+            line-height: 17px;
+            color: $black;
+        }
+        &-number {
+            font-size: 28px;
+            line-height: 32px;
+        }
+        &-more {
+            margin-top: 27px;
+        }
+        .inline-text {
+            font-size: 14px;
+            line-height: 20px;
+            color: black;
+        }
+
+    }
+}

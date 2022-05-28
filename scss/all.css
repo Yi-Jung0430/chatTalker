@@ -176,6 +176,10 @@ sub {
   color: #FFFFFF;
 }
 
+.text-primary {
+  color: #56C4C5;
+}
+
 .body-bg {
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg);
   background-position: 1150px 1500px;
@@ -827,5 +831,336 @@ sub {
   position: relative;
   border-radius: 0px 0px 0px 300px;
   background-color: #F7F9FD;
+}
+
+.products-body-img {
+  position: absolute;
+  z-index: 10;
+  right: 50px;
+}
+
+.products-body-sm-img {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+}
+
+@media screen and (max-width: 376px) {
+  .products-body-sm-img {
+    display: block;
+  }
+  .products-body-img {
+    display: none;
+  }
+}
+
+.products-banner {
+  z-index: 1000;
+  padding-top: 92px;
+  padding-bottom: 180px;
+}
+
+.products-banner-h2 {
+  color: #221E1F;
+  font-size: 48px;
+  letter-spacing: 0px;
+  line-height: 70px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.products-banner-h5 {
+  color: #221E1F;
+  font-size: 20px;
+  letter-spacing: 0px;
+  line-height: 29px;
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 376px) {
+  .products-header-bg {
+    border-radius: 0px 0px 0px 150px;
+  }
+  .products-banner {
+    padding-top: 48px;
+    padding-bottom: 361px;
+    background-image: url(../img/banner_sm.svg);
+    background-repeat: no-repeat;
+    margin-left: -10px;
+    background-size: cover;
+  }
+  .products-banner-title {
+    margin-left: 10px;
+  }
+  .products-banner-h2 {
+    font-size: 32px;
+    line-height: 46px;
+    margin-top: 8px;
+  }
+  .products-banner-h5 {
+    font-size: 16px;
+    line-height: 29px;
+    margin-top: 16px;
+  }
+}
+
+.program {
+  margin-top: 100px;
+}
+
+.program-h3 {
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  color: #221E1F;
+  font-weight: 700;
+}
+
+.program-number-list {
+  margin-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.program-number-card {
+  border: 1px solid #56C4C5;
+  border-radius: 27px;
+  padding: 12px 32px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.program-number-card:not(:last-child) {
+  margin-right: 16px;
+}
+
+.program-number-card:not(:first-child) {
+  color: #56C4C5;
+}
+
+.program-number-card:first-child {
+  color: #fff;
+  background-color: #56C4C5;
+}
+
+.program-number-card:hover {
+  color: #fff;
+  background-color: #56C4C5;
+}
+
+.program-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 54px;
+  margin-right: -8px;
+  margin-left: -8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.program-card {
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+  width: 39%;
+  margin-right: 8px;
+  margin-left: 8px;
+  padding: 16px 24px 32px 24px;
+}
+
+.program-h4 {
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 0px;
+  color: #221E1F;
+  line-height: 35px;
+  font-weight: 700;
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 16px;
+}
+
+.program-text {
+  line-height: 24px;
+  color: #221E1F;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.program-area {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.program .little-card {
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-align: center;
+}
+
+.program .equal {
+  font-size: 29px;
+  line-height: 42px;
+  margin-right: 21px;
+  margin-left: 21px;
+}
+
+.program-small-title {
+  font-size: 12px;
+  line-height: 17px;
+  color: #221E1F;
+}
+
+.program-number {
+  font-size: 32px;
+  line-height: 35px;
+  margin-top: 8px;
+}
+
+.program-number sub {
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.program-more {
+  margin-top: 32px;
+}
+
+.program .inline-icon, .program .inline-text {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.program .inline-text {
+  line-height: 24px;
+  color: black;
+}
+
+.program-more-list:not(:first-child) {
+  margin-top: 16px;
+}
+
+.program-btn {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.program-link {
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 12px 32px;
+  background-color: #56C4C5;
+  color: #fff;
+  border: 1px solid #56C4C5;
+  border-radius: 27px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.program-link:hover {
+  background-color: #2e8687;
+}
+
+@media screen and (max-width: 376px) {
+  .program {
+    margin-top: 60px;
+    overflow: hidden;
+  }
+  .program-h3 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .program-number-list {
+    margin-top: 24px;
+    margin-left: 16px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    max-width: 375px;
+  }
+  .program-number-card:not(:last-child) {
+    margin-right: 6px;
+  }
+  .program-number-card {
+    padding: 8px 16px;
+  }
+  .program-list {
+    margin-top: 32px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .program-card {
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 16px 16px 24px 16px;
+  }
+  .program-card:last-child {
+    margin-top: 24px;
+  }
+  .program-text {
+    margin-top: 24px;
+  }
+  .program-area {
+    margin-top: 24px;
+  }
+  .program .little-card {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .program .equal {
+    font-size: 24px;
+    line-height: 35px;
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+  .program-small-title {
+    font-size: 12px;
+    line-height: 17px;
+    color: #221E1F;
+  }
+  .program-number {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .program-more {
+    margin-top: 27px;
+  }
+  .program .inline-text {
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+  }
 }
 /*# sourceMappingURL=all.css.map */
