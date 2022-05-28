@@ -1,3 +1,8 @@
+.body-bg {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg);
+    background-position: 1150px 1500px;
+    background-repeat: no-repeat;
+}
 
 .header-bg {
     position: relative;
@@ -117,7 +122,6 @@
 .role {
     margin-top: 100px;
     position: relative;
-    overflow: hidden;
     &-h3 {
         font-size: $h3-font-size;
         line-height: 46px;
