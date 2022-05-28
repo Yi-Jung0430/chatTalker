@@ -13,7 +13,11 @@
     z-index: -1;
     right: 0;
 }
-
+@media screen and (max-width: 376px) {
+    .bg_home {
+        display: none;
+    }
+}
 .banner {
     display: flex;
     flex-wrap: wrap;
@@ -49,7 +53,54 @@
         font-weight: $font-weight-regular;
         margin-top: 16px;
     }
+    &-sm-bg {
+        display: none;
+    }
     
+}
+@media screen and (max-width: 376px) {
+    .banner {
+        margin-top: 32px;
+    
+        &-img{
+            width: 304px;
+            margin: 0 auto;
+        }
+    
+        &-h6 {
+            color: $primary;
+            font-size: 16px; 
+            letter-spacing: 0px;
+            line-height: 24px;
+            font-weight: $font-weight-bold;
+        }
+    
+        &-h2 {
+            color: $black;
+            font-size: 32px; 
+            letter-spacing: 0px;
+            line-height: 46px;
+            font-weight: $font-weight-bold;
+            margin-top: 8px;
+        }
+    
+        &-h5 {
+            color: $black;
+            font-size: 16px; 
+            letter-spacing: 0px;
+            line-height: 29px;
+            font-weight: $font-weight-regular;
+            margin-top: 16px;
+        }
+        &-sm-bg {
+            display: block;
+            position: absolute;
+            z-index: -1;
+            bottom: 0;
+            max-width: 334px;
+            margin: 0 auto;
+        }
+    }
 }
 
 // ball
@@ -262,6 +313,7 @@
     }
     &-list {
         display: flex;
+        flex-wrap: wrap;
         margin-right: -8px;
         margin-left: -8px;
         margin-top: 104px;

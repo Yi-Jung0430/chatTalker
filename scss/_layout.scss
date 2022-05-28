@@ -6,7 +6,16 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 32px;    
+}
+@media screen and (max-width: 376px) {
+    .nav {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    .border-bottom {
+        border-bottom: 2px solid #FFD153;
+    }
 }
 
 .logo {
@@ -21,6 +30,14 @@
         text-indent:101%; /*首行縮排*/
         overflow:hidden; /*自動隱藏超出的文字或圖片*/
         white-space:nowrap; /*希望元素在第一排上面，沒有斷行*/
+    }
+}
+@media screen and (max-width: 376px) {
+    .logo {
+        &-img {
+            height: 24px;
+            width: 130px;
+        }
     }
 }
 

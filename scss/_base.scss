@@ -37,4 +37,11 @@ sub {
     padding-left: 16px;
     padding-right: 16px;
 }
-
+@media screen and (max-width: 376px) {
+    .container {
+        max-width: 355px;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
