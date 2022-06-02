@@ -270,9 +270,12 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
-         function scrollToTop() {
-             $(window).scrollTop(0);
-         }
+         $(document).ready(function(){
+        
+            $('.top').click(function(){
+                $('html,body').animate({scrollTop:0},300);
+            });
+        });
     </script>
     
 </body>
