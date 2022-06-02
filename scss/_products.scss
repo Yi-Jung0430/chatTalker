@@ -2,11 +2,9 @@
     position: relative;
     border-radius: 0px 0px 0px 300px;
     background-color: #F7F9FD;
-}
-.products-body-img {
-    position: absolute;
-    z-index: 10;
-    right: 50px;
+    background-image: url(../img/banner.svg);
+    background-repeat: no-repeat;
+    background-position-x: 550px;
 }
 .products-body-sm-img {
     display: none;
@@ -23,14 +21,27 @@
     }
 }
 
+@media screen and (max-width: 992px) {
+    .products-header-bg {
+        background-position-x: 250px;
+    }
+    
+}
 @media screen and (max-width: 768px) {
+    .products-header-bg {
+        background-position-x: 150px;
+    }
+    
+}
+
+@media screen and (max-width: 376px) {
     .products-body-sm-img {
         display: block;
     }
-    
-    .products-body-img {
-        display: none;
+    .products-header-bg {
+        background-image: none;
     }
+    
 }
 .products-banner {
     z-index: 1000;
@@ -53,9 +64,13 @@
         font-weight: $font-weight-regular;
         margin-top: 16px;
     }
-    
+    &-title {
+        padding-left: 16px;
+    }
 }
-@media screen and (max-width: 768px) {
+
+
+@media screen and (max-width: 376px) {
     .products-header-bg {
         border-radius: 0px 0px 0px 150px;
     }
@@ -89,6 +104,7 @@
 // 選擇方案 program
 .program {
     margin-top: 100px;
+    overflow: hidden;
     &-h3 {
         font-size: $h3-font-size;
         line-height: 46px;
@@ -198,6 +214,11 @@
     &-more {
         margin-top: 32px;
     }
+
+    &-more-list {
+        display: flex;
+    }
+    
     .inline-icon, .inline-text {
         display: inline-block;
         margin-right: 8px;
@@ -230,8 +251,33 @@
        
     }
 }
-
 @media screen and (max-width: 768px) {
+    .program {
+        &-list {
+            justify-content: space-between;
+        }
+        &-card { 
+            width: 48%;    
+            margin: 0; 
+        }
+        &-number {
+            font-size: 16px;
+            line-height: 120%;
+            margin-top: 8px;
+            sub {
+                font-size: 8px;
+                line-height: 120%;
+            }
+        }
+        .equal {
+            font-size: 29px;
+            line-height: 42px;
+            margin-right: 8px;
+            margin-left: 8px;
+        }
+    }
+}
+@media screen and (max-width: 376px) {
     .program {
         margin-top: 60px;
         overflow: hidden;
@@ -243,7 +289,7 @@
             margin-top: 24px;
             margin-left: 16px;
             justify-content: start;
-            max-width: 375px;
+            max-width: 376px;
         }
         &-number-card:not(:last-child) {
             margin-right: 6px;
@@ -347,7 +393,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 376px) {
     .question {
         margin-top: 60px;
         overflow: hidden;
