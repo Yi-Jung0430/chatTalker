@@ -14,7 +14,16 @@
     z-index: 1;
     right:0;
 }
-@media screen and (max-width: 376px) {
+
+.products-btn {
+    z-index: 100;
+    transition: all .2s;
+    &:hover {
+        background-color: darken($secondary, 20%);
+    }
+}
+
+@media screen and (max-width: 768px) {
     .products-body-sm-img {
         display: block;
     }
@@ -46,7 +55,7 @@
     }
     
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 768px) {
     .products-header-bg {
         border-radius: 0px 0px 0px 150px;
     }
@@ -222,7 +231,7 @@
     }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 768px) {
     .program {
         margin-top: 60px;
         overflow: hidden;
@@ -338,7 +347,7 @@
     }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 768px) {
     .question {
         margin-top: 60px;
         overflow: hidden;
