@@ -105,6 +105,7 @@
 .program {
     margin-top: 100px;
     overflow: hidden;
+    padding-bottom: 8px;
     &-h3 {
         font-size: $h3-font-size;
         line-height: 46px;
@@ -218,7 +219,7 @@
     &-more-list {
         display: flex;
     }
-    
+
     .inline-icon, .inline-text {
         display: inline-block;
         margin-right: 8px;

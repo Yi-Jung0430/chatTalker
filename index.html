@@ -148,7 +148,7 @@
                 <h3 class="products-h3">快速了解客戶輪廓<br>建立品牌流量池</h3>
                 <h6 class="products-h6">深入用戶日常，成為用戶貼身好友<br>精準傳遞品牌資訊，打造個人化專屬服務<br>不知不覺深入用戶生活，成為用戶貼心的好朋朋:D</h6>
                 <div class="products-link">
-                    <a href="#" class="products-button">方案費用</a>
+                    <a href="products.html" class="products-button">方案費用</a>
                 </div>
             </div>
         </secion>
@@ -260,12 +260,20 @@
                 <a class="subscription-button" href="products.html">方案費用</a>
         </div>
         <!-- go to top -->
-        <div class="top"><img src="./img/top.png" alt="" class="top-img"></div>
+        <button class="top" onclick="scrollToTop()"><img src="./img/top.png" alt="" class="top-img">
+        </button>
         <!-- footer -->
         <footer class="footer">
             <p>© 2022 chatTalker. All Rights Reserved.</p>
         </footer>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+         function scrollToTop() {
+             $(window).scrollTop(0);
+         }
+    </script>
     
 </body>
 </html>

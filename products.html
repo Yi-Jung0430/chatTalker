@@ -128,7 +128,7 @@
                         </h4>
                         <img class="inline-icon" src="./img/icon_plus.svg" alt="icon_plus">
                     </div>
-                    <!-- <p class="question-text"></p> -->
+                    <p class="question-text">當然哦！我們錢都收了，不會拋棄你的！<br> 請您直接來我們公司，我們假日也都在辦公室。</p>
                 </li>
                 <li class="question-card">
                     <div class="question-title">
@@ -136,7 +136,7 @@
                         </h4>
                         <img class="inline-icon" src="./img/icon_plus.svg" alt="icon_plus">
                     </div>
-                    <!-- <p class="question-text"></p> -->
+                    <p class="question-text">當然哦！我們錢都收了，不會拋棄你的！<br> 請您直接來我們公司，我們假日也都在辦公室。</p>
                 </li>
                 <li class="question-card">
                     <div class="question-title">
@@ -148,15 +148,28 @@
                 </li>
             </ul>
         </section>
-
-
-
        <!-- go to top -->
-       <div class="top"><img src="./img/top.png" alt="" class="top-img"></div>
+       <button class="top" onclick="scrollToTop()"><img src="./img/top.png" alt="" class="top-img">
+       </button>
        <!-- footer -->
        <footer class="footer">
            <p>© 2022 chatTalker. All Rights Reserved.</p>
        </footer>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            function scrollToTop() {
+                $(window).scrollTop(0);
+            };
+            $(".inline-icon").click(function(e){
+                $(".question-text").toggle();
+            });
+
+            
+        });
+         
+    </script>
 </body>
 </html>

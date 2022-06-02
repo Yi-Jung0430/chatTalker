@@ -156,7 +156,10 @@ sub {
 .top {
   position: fixed;
   right: 5%;
-  top: 90%;
+  top: 88%;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 376px) {
@@ -1057,6 +1060,7 @@ sub {
 .program {
   margin-top: 100px;
   overflow: hidden;
+  padding-bottom: 8px;
 }
 
 .program-h3 {
