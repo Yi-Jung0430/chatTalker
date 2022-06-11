@@ -16,6 +16,10 @@
     color: $white;    
     padding: 8px 32px;
     line-height: 24px;
+    transition: all .2s;
+    &:hover {
+        background-color: darken($secondary, 20%);
+    }
 }
 
 .text-primary {

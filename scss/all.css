@@ -173,6 +173,12 @@ sub {
   color: #FFFFFF;
   padding: 8px 32px;
   line-height: 24px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.secondary-btn:hover {
+  background-color: #e91100;
 }
 
 .text-primary {
