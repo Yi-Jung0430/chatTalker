@@ -194,6 +194,10 @@ sub {
   height: initial;
 }
 
+.swiper {
+  padding: 0 8px 0 0;
+}
+
 /* 將底部 pagination 分頁的 active 狀態改為想要的樣式 */
 .swiper-pagination-bullet-active {
   width: 20px;

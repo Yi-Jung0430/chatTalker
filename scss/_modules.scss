@@ -13,10 +13,11 @@
 .secondary-btn {
     background: #FF5D50 0% 0% no-repeat padding-box;
     border-radius: 22px;
-    color: $white;    
+    color: $white;
     padding: 8px 32px;
     line-height: 24px;
     transition: all .2s;
+
     &:hover {
         background-color: darken($secondary, 20%);
     }
@@ -29,21 +30,26 @@
 // swiper
 :root {
     --swiper-theme-color: #ffd153;
-  }
+}
+
 /* 調整 swiper 容器 */
-  
+
 .swiper-slide {
     height: initial;
-  }
-  
-  /* 將底部 pagination 分頁的 active 狀態改為想要的樣式 */
-  .swiper-pagination-bullet-active {
+}
+
+.swiper {
+    padding: 0 8px 0 0;
+}
+
+/* 將底部 pagination 分頁的 active 狀態改為想要的樣式 */
+.swiper-pagination-bullet-active {
     width: 20px;
     border-radius: 8px;
-  }
-  
-  /* 讓分頁圓點移至下方 */
-  .swiper-pagination {
+}
+
+/* 讓分頁圓點移至下方 */
+.swiper-pagination {
     position: static;
     margin-top: 24px;
-  }
+}
