@@ -1270,6 +1270,7 @@ sub {
         -ms-flex-pack: start;
             justify-content: start;
     max-width: 376px;
+    overflow-x: auto;
   }
   .program-number-card:not(:last-child) {
     margin-right: 6px;

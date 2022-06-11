@@ -275,6 +275,7 @@
             margin-left: 16px;
             justify-content: start;
             max-width: 376px;
+            overflow-x: auto;
         }
         &-number-card:not(:last-child) {
             margin-right: 6px;
