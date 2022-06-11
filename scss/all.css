@@ -1349,10 +1349,6 @@ sub {
   margin-top: 16px;
 }
 
-.question .inline-icon {
-  display: inline-block;
-}
-
 .question-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1370,6 +1366,7 @@ sub {
 .question-text {
   margin-top: 24px;
   color: #747474;
+  display: none;
 }
 
 @media screen and (max-width: 376px) {
@@ -1393,5 +1390,14 @@ sub {
   .question-text {
     margin-top: 16px;
   }
+}
+
+.active {
+  color: #56C4C5;
+  font-weight: 800;
+}
+
+.icon-minus {
+  display: none;
 }
 /*# sourceMappingURL=all.css.map */

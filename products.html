@@ -121,28 +121,31 @@
             <h3 class="question-h3">常見問題</h3>
             <ul class="question-list">
                 <li class="question-card">
-                    <div class="question-title">
+                    <a href="#" class="question-title">
                         <h4 class="question-h4 inline-icon">我要怎麼變更方案？
                         </h4>
-                        <img class="inline-icon" src="./img/icon_plus.svg" alt="icon_plus">
-                    </div>
+                        <img class="inline-icon icon-plus" src="./img/icon_plus.svg" alt="icon_plus">
+                        <img class="inline-icon icon-minus" src="./img/icon_minus.svg" alt="icon_plus">
+                    </a>
                     <p class="question-text">當然哦！我們錢都收了，不會拋棄你的！<br> 請您直接來我們公司，我們假日也都在辦公室。</p>
                 </li>
                 <li class="question-card">
-                    <div class="question-title">
+                    <a href="#" class="question-title">
                         <h4 class="question-h4 inline-icon">如果我沒有LINE官方帳號怎麼辦？
                         </h4>
-                        <img class="inline-icon" src="./img/icon_plus.svg" alt="icon_plus">
-                    </div>
-                    <p class="question-text">當然哦！我們錢都收了，不會拋棄你的！<br> 請您直接來我們公司，我們假日也都在辦公室。</p>
+                        <img class="inline-icon icon-plus" src="./img/icon_plus.svg" alt="icon_plus">
+                        <img class="inline-icon icon-minus" src="./img/icon_minus.svg" alt="icon_plus">
+                    </a>
+                    <p class="question-text">歡迎點擊以下連結加入我們的 Line 官方帳號<br> 或是臉書粉絲專頁也可以找得到我們哦!</p>
                 </li>
                 <li class="question-card">
-                    <div class="question-title">
-                        <h4 class="question-h4 inline-icon text-primary">非上班日有客服支援嗎？
+                    <a href="#" class="question-title">
+                        <h4 class="question-h4 inline-icon">非上班日有客服支援嗎？
                         </h4>
-                        <img class="inline-icon" src="./img/icon_minus.svg" alt="icon_plus">
-                    </div>
-                    <p class="question-text">當然哦！我們錢都收了，不會拋棄你的！<br> 請您直接來我們公司，我們假日也都在辦公室。</p>
+                        <img class="inline-icon icon-plus" src="./img/icon_plus.svg" alt="icon_plus">
+                        <img class="inline-icon icon-minus" src="./img/icon_minus.svg" alt="icon_plus">
+                    </a>
+                    <p class="question-text">有的，歡迎加入我們的 Line 官方帳號，<br> 我們收到後會盡快回覆您的問題。</p>
                 </li>
             </ul>
         </section>
@@ -158,10 +161,19 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
         $(document).ready(function(){
-        
+            // go to top
             $('.top').click(function(){
                 $('html,body').animate({scrollTop:0},300);
             });
+            // 問答區
+            $('.question-title').click(function(e) {
+                e.preventDefault();
+                $(this).find('.question-h4').toggleClass('active');
+                $(this).find('.icon-minus').toggle();
+                $(this).find('.icon-plus').toggle();
+                $(this).siblings('.question-text').slideToggle();
+            });
+
         });
          
     </script>

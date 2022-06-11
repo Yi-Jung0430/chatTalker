@@ -365,9 +365,9 @@
     &-card:not(:first-child) {
         margin-top: 16px;
     }
-    .inline-icon {
-        display: inline-block;
-    }
+    // .inline-icon {
+    //     display: inline-block;
+    // }
     &-title {
         display: flex;
         justify-content: space-between;
@@ -379,6 +379,7 @@
     &-text {
         margin-top: 24px;
         color: #747474;
+        display: none;
     }
 }
 
@@ -404,4 +405,13 @@
             margin-top: 16px;
         }
     }
+}
+
+.active {
+    color: $primary;
+    font-weight: 800;
+}
+
+.icon-minus {
+    display: none;
 }
