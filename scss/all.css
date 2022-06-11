@@ -30,10 +30,6 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
-
 ol, ul {
   list-style: none;
 }
@@ -1013,7 +1009,6 @@ sub {
   color: #221E1F;
   font-size: 48px;
   letter-spacing: 0px;
-  line-height: 70px;
   font-weight: 700;
   margin-top: 8px;
 }
@@ -1022,7 +1017,6 @@ sub {
   color: #221E1F;
   font-size: 20px;
   letter-spacing: 0px;
-  line-height: 29px;
   font-weight: 400;
   margin-top: 16px;
 }
@@ -1048,12 +1042,10 @@ sub {
   }
   .products-banner-h2 {
     font-size: 32px;
-    line-height: 46px;
     margin-top: 8px;
   }
   .products-banner-h5 {
     font-size: 16px;
-    line-height: 29px;
     margin-top: 16px;
   }
 }
@@ -1066,7 +1058,6 @@ sub {
 
 .program-h3 {
   font-size: 32px;
-  line-height: 46px;
   text-align: center;
   color: #221E1F;
   font-weight: 700;
@@ -1141,14 +1132,12 @@ sub {
   font-size: 24px;
   letter-spacing: 0px;
   color: #221E1F;
-  line-height: 35px;
   font-weight: 700;
   border-bottom: 1px solid #DDDDDD;
   padding-bottom: 16px;
 }
 
 .program-text {
-  line-height: 24px;
   color: #221E1F;
   font-weight: 400;
   text-align: center;
@@ -1179,26 +1168,22 @@ sub {
 
 .program .equal {
   font-size: 29px;
-  line-height: 42px;
   margin-right: 21px;
   margin-left: 21px;
 }
 
 .program-small-title {
   font-size: 12px;
-  line-height: 17px;
   color: #221E1F;
 }
 
 .program-number {
   font-size: 32px;
-  line-height: 35px;
   margin-top: 8px;
 }
 
 .program-number sub {
   font-size: 12px;
-  line-height: 17px;
 }
 
 .program-more {
@@ -1217,7 +1202,6 @@ sub {
 }
 
 .program .inline-text {
-  line-height: 24px;
   color: black;
 }
 
@@ -1238,7 +1222,6 @@ sub {
 .program-link {
   text-align: center;
   font-size: 18px;
-  line-height: 26px;
   padding: 12px 32px;
   background-color: #56C4C5;
   color: #fff;
@@ -1264,16 +1247,13 @@ sub {
   }
   .program-number {
     font-size: 16px;
-    line-height: 120%;
     margin-top: 8px;
   }
   .program-number sub {
     font-size: 8px;
-    line-height: 120%;
   }
   .program .equal {
     font-size: 29px;
-    line-height: 42px;
     margin-right: 8px;
     margin-left: 8px;
   }
@@ -1286,7 +1266,6 @@ sub {
   }
   .program-h3 {
     font-size: 28px;
-    line-height: 40px;
   }
   .program-number-list {
     margin-top: 24px;
@@ -1328,25 +1307,21 @@ sub {
   }
   .program .equal {
     font-size: 24px;
-    line-height: 35px;
     margin-right: 6px;
     margin-left: 6px;
   }
   .program-small-title {
     font-size: 12px;
-    line-height: 17px;
     color: #221E1F;
   }
   .program-number {
     font-size: 28px;
-    line-height: 32px;
   }
   .program-more {
     margin-top: 27px;
   }
   .program .inline-text {
     font-size: 14px;
-    line-height: 20px;
     color: black;
   }
 }
@@ -1358,7 +1333,6 @@ sub {
 
 .question-h3 {
   font-size: 32px;
-  line-height: 46px;
   text-align: center;
   color: #221E1F;
   font-weight: 700;
@@ -1397,13 +1371,11 @@ sub {
 
 .question-h4 {
   font-size: 18px;
-  line-height: 28px;
   color: #221E1F;
 }
 
 .question-text {
   margin-top: 24px;
-  line-height: 32px;
   color: #747474;
 }
 
@@ -1414,7 +1386,6 @@ sub {
   }
   .question-h3 {
     font-size: 28px;
-    line-height: 40px;
   }
   .question-list {
     margin-top: 32px;
@@ -1425,7 +1396,6 @@ sub {
   }
   .question-h4 {
     font-size: 16px;
-    line-height: 24px;
   }
   .question-text {
     margin-top: 16px;

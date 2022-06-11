@@ -51,7 +51,6 @@
         color: $black;
         font-size: $h2-font-size;
         letter-spacing: 0px;
-        line-height: 70px;
         font-weight: $font-weight-bold;
         margin-top: 8px;
     }
@@ -60,7 +59,6 @@
         color: $black;
         font-size: $h5-font-size;
         letter-spacing: 0px;
-        line-height: 29px;
         font-weight: $font-weight-regular;
         margin-top: 16px;
     }
@@ -88,14 +86,12 @@
         }
         &-h2 {
             font-size: 32px;
-            line-height: 46px;
-            margin-top: 8px;
+                margin-top: 8px;
         }
     
         &-h5 {
             font-size: 16px; 
-            line-height: 29px;
-            margin-top: 16px;
+                margin-top: 16px;
         }
         
     }
@@ -108,7 +104,6 @@
     padding-bottom: 8px;
     &-h3 {
         font-size: $h3-font-size;
-        line-height: 46px;
         text-align: center;
         color: $black;
         font-weight: $font-weight-bold;  
@@ -164,13 +159,11 @@
         font-size: 24px;
         letter-spacing: 0px;
         color: $black;
-        line-height: 35px;
         font-weight: $font-weight-bold;
         border-bottom:  1px solid #DDDDDD;
         padding-bottom: 16px;
     }
     &-text {
-        line-height: 24px;
         color: $black;
         font-weight: $font-weight-regular;
         text-align: center;
@@ -194,23 +187,19 @@
 
     .equal {
         font-size: 29px;
-        line-height: 42px;
         margin-right: 21px;
         margin-left: 21px;
     }
     &-small-title {
         font-size: 12px;
-        line-height: 17px;
         color: $black;
     }
     &-number {
         font-size: 32px;
-        line-height: 35px;
         margin-top: 8px;
         sub {
             font-size: 12px;
-            line-height: 17px;
-        }
+            }
     }
     &-more {
         margin-top: 32px;
@@ -225,7 +214,6 @@
         margin-right: 8px;
     }
     .inline-text {
-        line-height: 24px;
         color: black;
     }
     &-more-list:not(:first-child) {
@@ -239,7 +227,6 @@
     &-link {
         text-align: center;
         font-size: 18px;
-        line-height: 26px;
         padding: 12px 32px;
         background-color: $primary;
         color:#fff;
@@ -263,17 +250,14 @@
         }
         &-number {
             font-size: 16px;
-            line-height: 120%;
-            margin-top: 8px;
+                margin-top: 8px;
             sub {
                 font-size: 8px;
-                line-height: 120%;
-            }
+                    }
         }
         .equal {
             font-size: 29px;
-            line-height: 42px;
-            margin-right: 8px;
+                margin-right: 8px;
             margin-left: 8px;
         }
     }
@@ -284,7 +268,7 @@
         overflow: hidden;
         &-h3 {
             font-size: 28px;
-            line-height: 40px; 
+    
         }
         &-number-list {
             margin-top: 24px;
@@ -324,26 +308,22 @@
         }
         .equal {
             font-size: 24px;
-            line-height: 35px;
-            margin-right: 6px;
+                margin-right: 6px;
             margin-left: 6px;
         }
         &-small-title {
             font-size: 12px;
-            line-height: 17px;
-            color: $black;
+                color: $black;
         }
         &-number {
             font-size: 28px;
-            line-height: 32px;
-        }
+            }
         &-more {
             margin-top: 27px;
         }
         .inline-text {
             font-size: 14px;
-            line-height: 20px;
-            color: black;
+                color: black;
         }
 
     }
@@ -356,7 +336,6 @@
     
     &-h3 {
         font-size: $h3-font-size;
-        line-height: 46px;
         text-align: center;
         color: $black;
         font-weight: $font-weight-bold;  
@@ -384,12 +363,10 @@
     }
     &-h4 {
         font-size: 18px;
-        line-height: 28px;
         color: $black;
     }
     &-text {
         margin-top: 24px;
-        line-height: 32px;
         color: #747474;
     }
 }
@@ -400,7 +377,7 @@
         overflow: hidden;
         &-h3 {
             font-size: 28px;
-            line-height: 40px; 
+    
         }
         &-list {
             margin-top: 32px;
@@ -411,8 +388,7 @@
         }
         &-h4 {
             font-size: 16px;
-            line-height: 24px;
-        }
+            }
         &-text {
             margin-top: 16px;
         }
