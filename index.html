@@ -1,282 +1,812 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>chatTalker</title>
     <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <!-- css style -->
-    <link rel="stylesheet" href="scss/all.css">
-</head>
-<body>
+    <link rel="stylesheet" href="scss/all.css" />
+  </head>
+  <body>
     <div class="body-bg">
-        <!-- header -->
-        <header class="header-bg">
-            <svg class="bg_home" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 850.364 770.087">
-                <path id="Path_1" data-name="Path 1" d="M518.658,1258.559s105.693,82.066,177.954,253.948c28,88.579-64.529,183.073,57.994,309.459,180.45,147.64,351.672,213.843,613.661,206.068,1.7,1.75,0-769.475,0-769.475Z" transform="translate(-518.658 -1258.559)" fill="#f6cb52"/>
-            </svg>
-            <nav class="nav container">
-                <h1 class="logo">
-                    <a href="index.html" class="logo-img">chatTalker</a>
-                </h1>
-                <a href="products.html" class="secondary-btn">方案費用</a>
-            </nav>
-            <div class="border-bottom"></div>
-            <div class="banner container">
-                <div class="banner-title">
-                    <h6 class="banner-h6">ChatTalker 最全面的聊天機器人</h6>
-                    <h2 class="banner-h2">你愛我像誰？<br> 扮演什麼角色我都會</h2>
-                    <h5 class="banner-h5">Facebook、Instagram、LINE 聊天機器人解決方案</h5>
-                </div>
-                <img src="./img/home.svg" alt="home-img" class="banner-img">
-                <svg class="banner-sm-bg" xmlns="http://www.w3.org/2000/svg" width="347" height="255" viewBox="0 0 347 255">
-                    <path id="Path_157" data-name="Path 157" d="M3682.835,758.69c-20.515-5.068-89.505-13.678-98.226-73.147s72.181-86.422,129.192-87.24,101.956-60.613,119.162-76.389,82.311-27.066,76.516,14.536-32.861,101.078,0,143.377,28.036,82.839-14.6,82.742S3703.351,763.758,3682.835,758.69Z" transform="translate(-3583.96 -507.647)" fill="#f6cb52"/>
-                </svg>
-            </div>
-        </header>
-        <!-- 背景球 -->
-        <div class="ball">
-            <svg class="ball01" xmlns="http://www.w3.org/2000/svg" width="361" height="361" viewBox="0 0 361 361">
-                <circle id="Ellipse_3" data-name="Ellipse 3" cx="180.5" cy="180.5" r="180.5" fill="#56c4c5"/>
-            </svg>
+      <!-- header -->
+      <header class="header-bg">
+        <svg
+          class="bg_home"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 850.364 770.087"
+        >
+          <path
+            id="Path_1"
+            data-name="Path 1"
+            d="M518.658,1258.559s105.693,82.066,177.954,253.948c28,88.579-64.529,183.073,57.994,309.459,180.45,147.64,351.672,213.843,613.661,206.068,1.7,1.75,0-769.475,0-769.475Z"
+            transform="translate(-518.658 -1258.559)"
+            fill="#f6cb52"
+          />
+        </svg>
+        <nav class="nav container">
+          <h1 class="logo">
+            <a href="index.html" class="logo-img">chatTalker</a>
+          </h1>
+          <a href="products.html" class="secondary-btn">方案費用</a>
+        </nav>
+        <div class="border-bottom"></div>
+        <div class="banner container">
+          <div class="banner-title">
+            <h6 class="banner-h6">ChatTalker 最全面的聊天機器人</h6>
+            <h2 class="banner-h2">
+              你愛我像誰？<br />
+              扮演什麼角色我都會
+            </h2>
+            <h5 class="banner-h5">
+              Facebook、Instagram、LINE 聊天機器人解決方案
+            </h5>
+          </div>
+          <img src="./img/home.svg" alt="home-img" class="banner-img" />
+          <svg
+            class="banner-sm-bg"
+            xmlns="http://www.w3.org/2000/svg"
+            width="347"
+            height="255"
+            viewBox="0 0 347 255"
+          >
+            <path
+              id="Path_157"
+              data-name="Path 157"
+              d="M3682.835,758.69c-20.515-5.068-89.505-13.678-98.226-73.147s72.181-86.422,129.192-87.24,101.956-60.613,119.162-76.389,82.311-27.066,76.516,14.536-32.861,101.078,0,143.377,28.036,82.839-14.6,82.742S3703.351,763.758,3682.835,758.69Z"
+              transform="translate(-3583.96 -507.647)"
+              fill="#f6cb52"
+            />
+          </svg>
         </div>
-        <!-- 三大平台，我來搞定 -->
-        <section class="social container">
-            <h3 class="social-h3">
-                三大平台，我來搞定
-            </h3>
-                <ul class="social-list">
-                    <li class="social-card">
-                        <img src="./img/messenger.svg" alt="messenger.svg" class="social-img">
-                        <h4 class="social-title">Facebook Messenger</h4>
-                        <p class="social-text">
-                            結合粉絲專頁，提高粉絲互動率<br>有效經營品牌社群
-                        </p>
-                    </li>
-                    <li class="social-card">
-                        <img src="./img/line.svg" alt="line.svg" class="social-img">
-                        <h4 class="social-title">LINE 官方帳號</h4>
-                        <p class="social-text">
-                            融入日常生活，精準傳遞品牌資訊<br>打造個人化專屬服務
-                        </p>
-                    </li>
-                    <li class="social-card">
-                        <img src="./img/instagram.svg" alt="instagram.svg" class="social-img">
-                        <h4 class="social-title">Instagram 商業帳號</h4>
-                        <p class="social-text">
-                            貼近粉絲，提升品牌自然聲量<br>行銷、抽獎一站完成
-                        </p>
-                    </li>
-                </ul>
-        </section>
-        <!-- 任何角色，我都能給 -->
-        <section class="role container">
-            <h3 class="role-h3">
-                任何的角色，我都能給
-            </h3>
-            <h4 class="role-h4">
-                量身打造您想要的專屬服務，幫助您迅速判斷成效、並加快決策
-            </h4>
-                <ul class="role-list">
-                    <li class="role-card">
-                        <img src="./img/ch01.svg" alt="img" class="role-img">
-                        <div class="role-area">
-                            <h5 class="role-title">活動主</h5>
-                            <p class="role-text">用戶數位足跡掌握在手<br>精準取得客戶輪廓，提供分析</p>
-                        </div>
-                    </li>
-                    <li class="role-card">
-                        <img src="./img/ch02.svg" alt="img" class="role-img">
-                        <div class="role-area">
-                            <h5 class="role-title">創作者</h5>
-                            <p class="role-text">自由設計互動腳本<br>輕鬆整合各項數據</p>
-                        </div>
-                    </li>
-                    <li class="role-card">
-                        <img src="./img/ch03.svg" alt="img" class="role-img">
-                        <div class="role-area">
-                            <h5 class="role-title">企業品牌</h5>
-                            <p class="role-text">多元資料整合，做出服務差異化<br>幫助企業加速決策</p>
-                        </div>
-                    </li>
-                    <li class="role-card">
-                        <img src="./img/ch04.svg" alt="img" class="role-img">
-                        <div class="role-area">
-                            <h5 class="role-title">其他</h5>
-                        <p class="role-text">創造更多可能...</p>
-                        </div>
-                    </li>
-                </ul>
-        </section>
-        <!-- 快速了解客戶輪廓 -->
-        <secion class="products container">
-            <ul class="products-list">
-                <li class="products-item">
-                    <div class="products-card">
-                        <div class="products-icon"><img src="./img/icon01.svg" alt="icon" class="products-img"></div>
-                        <h6 class="products-title">無敵轉換術</h6>
-                        <p class="products-text">精準掌握客群來源<br>分析用戶轉化流程</p>
-                    </div>
-                </li>
-                <li class="products-item">
-                    <div class="products-card">
-                        <div class="products-icon"><img src="./img/icon02.svg" alt="icon" class="products-img"></div>
-                        <h6 class="products-title">聊天機器人</h6>
-                        <p class="products-text">66款聊天機器人模組<br>自由設計聊天流程</p>
-                    </div>
-                </li>
-                <li class="products-item">
-                    <div class="products-card">
-                        <div class="products-icon"><img src="./img/icon03.svg" alt="icon" class="products-img"></div>
-                        <h6 class="products-title">一站式訊息中心</h6>
-                        <p class="products-text">整合Messenger、LINE<br>和IG三大平台訊息</p>
-                    </div>
-                </li>
-                <li class="products-item">
-                    <div class="products-card">
-                        <div class="products-icon"><img src="./img/icon04.svg" alt="icon" class="products-img"></div>
-                        <h6 class="products-title">群發訊息</h6>
-                        <p class="products-text">自由選定特定受眾<br>精準推送群發訊息</p>
-                    </div>
-                </li>
-            </ul>
-            <div class="products-introduce">
-                <h3 class="products-h3">快速了解客戶輪廓<br>建立品牌流量池</h3>
-                <h6 class="products-h6">深入用戶日常，成為用戶貼身好友<br>精準傳遞品牌資訊，打造個人化專屬服務<br>不知不覺深入用戶生活，成為用戶貼心的好朋朋:D</h6>
-                <div class="products-link">
-                    <a href="products.html" class="products-button">方案費用</a>
-                </div>
+      </header>
+      <!-- 背景球 -->
+      <div class="ball">
+        <svg
+          class="ball01"
+          xmlns="http://www.w3.org/2000/svg"
+          width="361"
+          height="361"
+          viewBox="0 0 361 361"
+        >
+          <circle
+            id="Ellipse_3"
+            data-name="Ellipse 3"
+            cx="180.5"
+            cy="180.5"
+            r="180.5"
+            fill="#56c4c5"
+          />
+        </svg>
+      </div>
+      <!-- 三大平台，我來搞定 -->
+      <section class="social container">
+        <h3 class="social-h3">三大平台，我來搞定</h3>
+        <ul class="social-list">
+          <li class="social-card">
+            <img
+              src="./img/messenger.svg"
+              alt="messenger.svg"
+              class="social-img"
+            />
+            <h4 class="social-title">Facebook Messenger</h4>
+            <p class="social-text">
+              結合粉絲專頁，提高粉絲互動率<br />有效經營品牌社群
+            </p>
+          </li>
+          <li class="social-card">
+            <img src="./img/line.svg" alt="line.svg" class="social-img" />
+            <h4 class="social-title">LINE 官方帳號</h4>
+            <p class="social-text">
+              融入日常生活，精準傳遞品牌資訊<br />打造個人化專屬服務
+            </p>
+          </li>
+          <li class="social-card">
+            <img
+              src="./img/instagram.svg"
+              alt="instagram.svg"
+              class="social-img"
+            />
+            <h4 class="social-title">Instagram 商業帳號</h4>
+            <p class="social-text">
+              貼近粉絲，提升品牌自然聲量<br />行銷、抽獎一站完成
+            </p>
+          </li>
+        </ul>
+      </section>
+      <!-- 任何角色，我都能給 -->
+      <section class="role container">
+        <h3 class="role-h3">任何的角色，我都能給</h3>
+        <h4 class="role-h4">
+          量身打造您想要的專屬服務，幫助您迅速判斷成效、並加快決策
+        </h4>
+        <ul class="role-list">
+          <li class="role-card">
+            <img src="./img/ch01.svg" alt="img" class="role-img" />
+            <div class="role-area">
+              <h5 class="role-title">活動主</h5>
+              <p class="role-text">
+                用戶數位足跡掌握在手<br />精準取得客戶輪廓，提供分析
+              </p>
             </div>
-        </secion>
-        <!-- 好評如潮 evaluation -->
-        <section class="evaluation container">
-            <h3 class="evaluation-h3">好評如潮</h3>
-            <ul class="evaluation-list">
-                <li class="evaluation-card">
-                    <img src="./img/user01.jpg" alt="img" class="evaluation-img">
-                    <p class="evaluation-feedback">
-                        原來聊天機器人可以這麼有人性！團隊有完整的行銷計畫提供數位整合，讓我們公司的產品用更活潑的方式讓使用者認識。
-                    </p>
-                    <p class="evaluation-userName">
-                        清心寡慾設計公司
-                    </p>
-                    <div class="evaluation-footer">
-                        <p class="evaluation-position">
-                            Lina 執行長
-                        </p>
-                        <span class="evaluation-star">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20.015" height="19.082" viewBox="0 0 20.015 19.082">
-                                <path id="Path_4" data-name="Path 4" d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z" transform="translate(-2 -2.459)" fill="#f5ca52"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20.015" height="19.082" viewBox="0 0 20.015 19.082">
-                                <path id="Path_4" data-name="Path 4" d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z" transform="translate(-2 -2.459)" fill="#f5ca52"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20.015" height="19.082" viewBox="0 0 20.015 19.082">
-                                <path id="Path_4" data-name="Path 4" d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z" transform="translate(-2 -2.459)" fill="#f5ca52"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20.015" height="19.082" viewBox="0 0 20.015 19.082">
-                                <path id="Path_4" data-name="Path 4" d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z" transform="translate(-2 -2.459)" fill="#f5ca52"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20.015" height="19.082" viewBox="0 0 20.015 19.082">
-                                <path id="Path_4" data-name="Path 4" d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z" transform="translate(-2 -2.459)" fill="#f5ca52"/>
-                            </svg>
-                        </span>
-                    </div>
-                </li>
-                <li class="evaluation-card">
-                    <img src="./img/user02.jpg" alt="img" class="evaluation-img">
-                    <p class="evaluation-feedback">
-                        團隊很積極的協助行銷追蹤，針對機器人進行優化，讓我們一個月內提高10000個追蹤者，客戶體驗回饋很正面！
-                    </p>
-                    <p class="evaluation-userName">
-                        subwhat 行銷公司
-                    </p>
-                    <div class="evaluation-footer">
-                        <p class="evaluation-position">
-                            Zoe 活動長
-                        </p>
-                        <span class="evaluation-star">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20.015" height="19.082" viewBox="0 0 20.015 19.082">
-                                <path id="Path_4" data-name="Path 4" d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z" transform="translate(-2 -2.459)" fill="#f5ca52"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20.015" height="19.082" viewBox="0 0 20.015 19.082">
-                                <path id="Path_4" data-name="Path 4" d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z" transform="translate(-2 -2.459)" fill="#f5ca52"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20.015" height="19.082" viewBox="0 0 20.015 19.082">
-                                <path id="Path_4" data-name="Path 4" d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z" transform="translate(-2 -2.459)" fill="#f5ca52"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20.015" height="19.082" viewBox="0 0 20.015 19.082">
-                                <path id="Path_4" data-name="Path 4" d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z" transform="translate(-2 -2.459)" fill="#f5ca52"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20.015" height="19.082" viewBox="0 0 20.015 19.082">
-                                <path id="Path_4" data-name="Path 4" d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z" transform="translate(-2 -2.459)" fill="#f5ca52"/>
-                            </svg>
-                        </span>
-                    </div>
-                </li>
-                <li class="evaluation-card">
-                    <img src="./img/user03.jpg" alt="imgimg" class="evaluation-img">
-                    <p class="evaluation-feedback">
-                        經營了好久的IG，一直無法提升粉絲數，和團隊合作後，才知道可以用聊天機器人玩這麼豐富的行銷活動！太讚拉～
-                    </p>
-                    <p class="evaluation-userName">
-                        油土伯
-                    </p>
-                    <div class="evaluation-footer">
-                        <p class="evaluation-position">
-                            HowBig
-                        </p>
-                        <span class="evaluation-star">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20.015" height="19.082" viewBox="0 0 20.015 19.082">
-                                <path id="Path_4" data-name="Path 4" d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z" transform="translate(-2 -2.459)" fill="#f5ca52"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20.015" height="19.082" viewBox="0 0 20.015 19.082">
-                                <path id="Path_4" data-name="Path 4" d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z" transform="translate(-2 -2.459)" fill="#f5ca52"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20.015" height="19.082" viewBox="0 0 20.015 19.082">
-                                <path id="Path_4" data-name="Path 4" d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z" transform="translate(-2 -2.459)" fill="#f5ca52"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20.015" height="19.082" viewBox="0 0 20.015 19.082">
-                                <path id="Path_4" data-name="Path 4" d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z" transform="translate(-2 -2.459)" fill="#f5ca52"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20.015" height="19.082" viewBox="0 0 20.015 19.082">
-                                <path id="Path_4" data-name="Path 4" d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z" transform="translate(-2 -2.459)" fill="#f5ca52"/>
-                            </svg>
-                        </span>
-                    </div>
-                </li>
-            </ul>
-            <svg class="ball03" xmlns="http://www.w3.org/2000/svg" width="153" height="153" viewBox="0 0 153 153">
-                <circle id="Ellipse_10" data-name="Ellipse 10" cx="76.5" cy="76.5" r="76.5" fill="#fbe8b1"/>
-            </svg>
-        </section>
-        <!-- 訂閱區塊 -->
-        <div class="subscription">
-            <h2 class="subscription-h3">\ 美好用戶體驗，從對話開始 /</h2>
-                <a class="subscription-button" href="products.html">方案費用</a>
+          </li>
+          <li class="role-card">
+            <img src="./img/ch02.svg" alt="img" class="role-img" />
+            <div class="role-area">
+              <h5 class="role-title">創作者</h5>
+              <p class="role-text">自由設計互動腳本<br />輕鬆整合各項數據</p>
+            </div>
+          </li>
+          <li class="role-card">
+            <img src="./img/ch03.svg" alt="img" class="role-img" />
+            <div class="role-area">
+              <h5 class="role-title">企業品牌</h5>
+              <p class="role-text">
+                多元資料整合，做出服務差異化<br />幫助企業加速決策
+              </p>
+            </div>
+          </li>
+          <li class="role-card">
+            <img src="./img/ch04.svg" alt="img" class="role-img" />
+            <div class="role-area">
+              <h5 class="role-title">其他</h5>
+              <p class="role-text">創造更多可能...</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- 快速了解客戶輪廓 -->
+      <secion class="products container">
+        <ul class="products-list">
+          <li class="products-item">
+            <div class="products-card">
+              <div class="products-icon">
+                <img src="./img/icon01.svg" alt="icon" class="products-img" />
+              </div>
+              <h6 class="products-title">無敵轉換術</h6>
+              <p class="products-text">
+                精準掌握客群來源<br />分析用戶轉化流程
+              </p>
+            </div>
+          </li>
+          <li class="products-item">
+            <div class="products-card">
+              <div class="products-icon">
+                <img src="./img/icon02.svg" alt="icon" class="products-img" />
+              </div>
+              <h6 class="products-title">聊天機器人</h6>
+              <p class="products-text">
+                66款聊天機器人模組<br />自由設計聊天流程
+              </p>
+            </div>
+          </li>
+          <li class="products-item">
+            <div class="products-card">
+              <div class="products-icon">
+                <img src="./img/icon03.svg" alt="icon" class="products-img" />
+              </div>
+              <h6 class="products-title">一站式訊息中心</h6>
+              <p class="products-text">
+                整合Messenger、LINE<br />和IG三大平台訊息
+              </p>
+            </div>
+          </li>
+          <li class="products-item">
+            <div class="products-card">
+              <div class="products-icon">
+                <img src="./img/icon04.svg" alt="icon" class="products-img" />
+              </div>
+              <h6 class="products-title">群發訊息</h6>
+              <p class="products-text">
+                自由選定特定受眾<br />精準推送群發訊息
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div class="products-introduce">
+          <h3 class="products-h3">快速了解客戶輪廓<br />建立品牌流量池</h3>
+          <h6 class="products-h6">
+            深入用戶日常，成為用戶貼身好友<br />精準傳遞品牌資訊，打造個人化專屬服務<br />不知不覺深入用戶生活，成為用戶貼心的好朋朋:D
+          </h6>
+          <div class="products-link">
+            <a href="products.html" class="products-button">方案費用</a>
+          </div>
         </div>
-        <!-- go to top -->
-        <button class="top" onclick="scrollToTop()"><img src="./img/top.png" alt="" class="top-img">
-        </button>
-        <!-- footer -->
-        <footer class="footer">
-            <p>© 2022 chatTalker. All Rights Reserved.</p>
-        </footer>
+      </secion>
+      <!-- 好評如潮 evaluation -->
+      <section class="evaluation container">
+        <h3 class="evaluation-h3">好評如潮</h3>
+        <div class="swiper" id="comment-swiper">
+          <ul class="evaluation-list swiper-wrapper">
+            <li class="evaluation-card swiper-slide">
+              <img src="./img/user01.jpg" alt="img" class="evaluation-img" />
+              <p class="evaluation-feedback">
+                原來聊天機器人可以這麼有人性！團隊有完整的行銷計畫提供數位整合，讓我們公司的產品用更活潑的方式讓使用者認識。
+              </p>
+              <p class="evaluation-userName">清心寡慾設計公司</p>
+              <div class="evaluation-footer">
+                <p class="evaluation-position">Lina 執行長</p>
+                <span class="evaluation-star">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </li>
+            <li class="evaluation-card swiper-slide">
+              <img src="./img/user02.jpg" alt="img" class="evaluation-img" />
+              <p class="evaluation-feedback">
+                團隊很積極的協助行銷追蹤，針對機器人進行優化，讓我們一個月內提高10000個追蹤者，客戶體驗回饋很正面！
+              </p>
+              <p class="evaluation-userName">subwhat 行銷公司</p>
+              <div class="evaluation-footer">
+                <p class="evaluation-position">Zoe 活動長</p>
+                <span class="evaluation-star">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </li>
+            <li class="evaluation-card swiper-slide">
+              <img src="./img/user03.jpg" alt="imgimg" class="evaluation-img" />
+              <p class="evaluation-feedback">
+                經營了好久的IG，一直無法提升粉絲數，和團隊合作後，才知道可以用聊天機器人玩這麼豐富的行銷活動！太讚拉～
+              </p>
+              <p class="evaluation-userName">油土伯</p>
+              <div class="evaluation-footer">
+                <p class="evaluation-position">HowBig</p>
+                <span class="evaluation-star">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </li>
+            <li class="evaluation-card swiper-slide">
+              <img src="./img/user01.jpg" alt="img" class="evaluation-img" />
+              <p class="evaluation-feedback">
+                原來聊天機器人可以這麼有人性！團隊有完整的行銷計畫提供數位整合，讓我們公司的產品用更活潑的方式讓使用者認識。
+              </p>
+              <p class="evaluation-userName">清心寡慾設計公司</p>
+              <div class="evaluation-footer">
+                <p class="evaluation-position">Lina 執行長</p>
+                <span class="evaluation-star">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </li>
+            <li class="evaluation-card swiper-slide">
+              <img src="./img/user02.jpg" alt="img" class="evaluation-img" />
+              <p class="evaluation-feedback">
+                團隊很積極的協助行銷追蹤，針對機器人進行優化，讓我們一個月內提高10000個追蹤者，客戶體驗回饋很正面！
+              </p>
+              <p class="evaluation-userName">subwhat 行銷公司</p>
+              <div class="evaluation-footer">
+                <p class="evaluation-position">Zoe 活動長</p>
+                <span class="evaluation-star">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </li>
+            <li class="evaluation-card swiper-slide">
+              <img src="./img/user03.jpg" alt="imgimg" class="evaluation-img" />
+              <p class="evaluation-feedback">
+                經營了好久的IG，一直無法提升粉絲數，和團隊合作後，才知道可以用聊天機器人玩這麼豐富的行銷活動！太讚拉～
+              </p>
+              <p class="evaluation-userName">油土伯</p>
+              <div class="evaluation-footer">
+                <p class="evaluation-position">HowBig</p>
+                <span class="evaluation-star">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.015"
+                    height="19.082"
+                    viewBox="0 0 20.015 19.082"
+                  >
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M22,10.1A.937.937,0,0,0,21.2,9l-5.7-.8L12.9,3a.781.781,0,0,0-.4-.4,1.012,1.012,0,0,0-1.4.4L8.6,8.2,2.9,9a.6.6,0,0,0-.6.3.967.967,0,0,0,0,1.4l4.1,4-1,5.7a1.268,1.268,0,0,0,.1.6,1.012,1.012,0,0,0,1.4.4L12,18.7l5.1,2.7a.749.749,0,0,0,.5.1h.2a1.037,1.037,0,0,0,.8-1.2l-1-5.7,4.1-4A.55.55,0,0,0,22,10.1Z"
+                      transform="translate(-2 -2.459)"
+                      fill="#f5ca52"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </li>
+          </ul>
+          <!-- swiper 套件的分頁圓點 -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <svg
+          class="ball03"
+          xmlns="http://www.w3.org/2000/svg"
+          width="153"
+          height="153"
+          viewBox="0 0 153 153"
+        >
+          <circle
+            id="Ellipse_10"
+            data-name="Ellipse 10"
+            cx="76.5"
+            cy="76.5"
+            r="76.5"
+            fill="#fbe8b1"
+          />
+        </svg>
+      </section>
+      <!-- 訂閱區塊 -->
+      <div class="subscription">
+        <h2 class="subscription-h3">\ 美好用戶體驗，從對話開始 /</h2>
+        <a class="subscription-button" href="products.html">方案費用</a>
+      </div>
+      <!-- go to top -->
+      <button class="top" onclick="scrollToTop()">
+        <img src="./img/top.png" alt="" class="top-img" />
+      </button>
+      <!-- footer -->
+      <footer class="footer">
+        <p>© 2022 chatTalker. All Rights Reserved.</p>
+      </footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- 載入 Swiper 套件 -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
-         $(document).ready(function(){
-        
-            $('.top').click(function(){
-                $('html,body').animate({scrollTop:0},300);
-            });
+      $(document).ready(function () {
+        $(".top").click(function () {
+          $("html,body").animate({ scrollTop: 0 }, 300);
         });
+
+        // SWIPER
+        function initSwiper() {
+          /* 
+    id="comment-swiper" 區塊是我想要使用 swiper 套件的範圍
+    要抓取 id "#comment-swiper"
+    */
+          const swiper = new Swiper("#comment-swiper", {
+            /*  預設要顯示幾個卡片 */
+            slidesPerView: 1,
+            /* 斷點設定 */
+            breakpoints: {
+              /* 螢幕寬度大於等於 992px 時切換為 3 欄 */
+              992: {
+                slidesPerView: 3,
+              },
+              /* 螢幕寬度大於等於 768px 時切換為 2 欄 */
+              768: {
+                slidesPerView: 2,
+              },
+              /* 更小時都顯示 1 欄 */
+              0: {
+                slidesPerView: 1,
+              },
+            },
+            /* 卡片元素的間隔 */
+            spaceBetween: 16,
+            pagination: {
+              /* 我想將分頁圓點綁在哪個 class */
+              el: ".swiper-pagination",
+              /* 將輪播設定為可以點擊分頁圓點來切換圖片 */
+              clickable: true,
+            },
+          });
+        }
+
+        /* 觸發自己定義的函式 */
+        initSwiper();
+      });
     </script>
-    
-</body>
+  </body>
 </html>

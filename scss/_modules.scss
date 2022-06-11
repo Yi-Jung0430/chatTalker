@@ -26,3 +26,24 @@
     color: $primary;
 }
 
+// swiper
+:root {
+    --swiper-theme-color: #ffd153;
+  }
+/* 調整 swiper 容器 */
+  
+.swiper-slide {
+    height: initial;
+  }
+  
+  /* 將底部 pagination 分頁的 active 狀態改為想要的樣式 */
+  .swiper-pagination-bullet-active {
+    width: 20px;
+    border-radius: 8px;
+  }
+  
+  /* 讓分頁圓點移至下方 */
+  .swiper-pagination {
+    position: static;
+    margin-top: 24px;
+  }

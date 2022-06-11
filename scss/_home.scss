@@ -557,18 +557,12 @@
         font-weight: $font-weight-bold;
     }
     &-list {
-        display: flex;
-        flex-wrap: nowrap;
-        margin-right: -8px;
-        margin-left: -8px;
         margin-top: 104px;
     }
     &-card {
         padding: 48px 32px 24px 32px;
         box-shadow: 0px 2px 10px #00000014;
         border-radius: 12px;
-        margin-left: 16px;
-        margin-right: 16px;
         position: relative; 
         background-color: $white;
     }
@@ -608,21 +602,13 @@
             line-height: 40px;
         }
         &-list {
-            display: flex;
-            flex-wrap: nowrap;
-            margin-right: 0;
-            margin-left: 0;
             margin-top: 88px;
-            justify-content: center;
         }
         &-card {
             padding: 48px 16px 16px 16px;
             margin-left: 0px;
             margin-right: 0px;
-            width: 80%;
-        }
-        &-card:not(:first-child) {
-            display: none;
+            // width: 80%;
         }
         &-userName{
             margin-top: 16px;
@@ -631,13 +617,7 @@
     }
 }
 
-@media screen and (max-width: 375px) {
-    .evaluation {
-        &-card {
-            width: 100%;
-        }
-    }
-}
+
 
 // 訂閱區塊
 .subscription {
