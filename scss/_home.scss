@@ -387,6 +387,7 @@
     display: flex;
     margin-top: 100px;
     justify-content: space-between;
+    align-items: center;
     &-list {
         width: 47%;
         display: flex;
@@ -430,11 +431,6 @@
         margin-top: 28px;
     }
 
-    &-introduce {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
     &-h3 {
         font-size: $h3-font-size;
         font-weight: $font-weight-bold;
