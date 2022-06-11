@@ -115,7 +115,6 @@
         justify-content: center;
     }
     &-number-card {
-        
         a {
             padding: 12px 32px;
             border: 1px solid #56C4C5;
@@ -123,23 +122,14 @@
             transition: all .3s;
             white-space:nowrap;
         }
-        
+    }
+    &-number-link {
+        color: $primary;
     }
     &-number-card:not(:last-child) {
         margin-right: 16px;
     }
-    &-number-card:not(:first-child) {
-        a {
-            color: $primary;
-        }
-    }
-    &-number-card:first-child {
-        a {
-            color: #fff;
-            background-color: $primary;
-        }
-        
-    }
+    
     &-number-card:hover {
         a {
             color: #fff;
@@ -147,6 +137,7 @@
         }
         
     }
+   
     &-list {
         display: flex;
         flex-wrap: wrap;
@@ -414,4 +405,11 @@
 
 .icon-minus {
     display: none;
+}
+
+.program-number-active {
+
+    color: #fff;
+    background-color: $primary;
+    
 }

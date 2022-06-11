@@ -1080,17 +1080,12 @@ sub {
   white-space: nowrap;
 }
 
-.program-number-card:not(:last-child) {
-  margin-right: 16px;
-}
-
-.program-number-card:not(:first-child) a {
+.program-number-link {
   color: #56C4C5;
 }
 
-.program-number-card:first-child a {
-  color: #fff;
-  background-color: #56C4C5;
+.program-number-card:not(:last-child) {
+  margin-right: 16px;
 }
 
 .program-number-card:hover a {
@@ -1399,5 +1394,10 @@ sub {
 
 .icon-minus {
   display: none;
+}
+
+.program-number-active {
+  color: #fff;
+  background-color: #56C4C5;
 }
 /*# sourceMappingURL=all.css.map */
