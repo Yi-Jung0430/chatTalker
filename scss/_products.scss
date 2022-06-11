@@ -115,26 +115,37 @@
         justify-content: center;
     }
     &-number-card {
-        border: 1px solid #56C4C5;
-        border-radius: 27px;
-        padding: 12px 32px;
-        transition: all .3s;
-        cursor: pointer;
-        white-space:nowrap;
+        
+        a {
+            padding: 12px 32px;
+            border: 1px solid #56C4C5;
+            border-radius: 27px;
+            transition: all .3s;
+            white-space:nowrap;
+        }
+        
     }
     &-number-card:not(:last-child) {
         margin-right: 16px;
     }
     &-number-card:not(:first-child) {
-        color: $primary;
+        a {
+            color: $primary;
+        }
     }
     &-number-card:first-child {
-        color: #fff;
-        background-color: $primary;
+        a {
+            color: #fff;
+            background-color: $primary;
+        }
+        
     }
     &-number-card:hover {
-        color: #fff;
-        background-color: $primary;
+        a {
+            color: #fff;
+            background-color: $primary;
+        }
+        
     }
     &-list {
         display: flex;

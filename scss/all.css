@@ -1071,13 +1071,12 @@ sub {
           justify-content: center;
 }
 
-.program-number-card {
+.program-number-card a {
+  padding: 12px 32px;
   border: 1px solid #56C4C5;
   border-radius: 27px;
-  padding: 12px 32px;
   -webkit-transition: all .3s;
   transition: all .3s;
-  cursor: pointer;
   white-space: nowrap;
 }
 
@@ -1085,16 +1084,16 @@ sub {
   margin-right: 16px;
 }
 
-.program-number-card:not(:first-child) {
+.program-number-card:not(:first-child) a {
   color: #56C4C5;
 }
 
-.program-number-card:first-child {
+.program-number-card:first-child a {
   color: #fff;
   background-color: #56C4C5;
 }
 
-.program-number-card:hover {
+.program-number-card:hover a {
   color: #fff;
   background-color: #56C4C5;
 }
