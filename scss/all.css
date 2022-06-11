@@ -1204,7 +1204,7 @@ sub {
   margin-top: 16px;
 }
 
-.program-btn {
+.program-link {
   margin-top: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1212,9 +1212,6 @@ sub {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.program-link {
   text-align: center;
   font-size: 18px;
   padding: 12px 32px;

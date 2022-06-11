@@ -230,12 +230,11 @@
     &-more-list:not(:first-child) {
         margin-top: 16px;
     }
-    &-btn {
+   
+    &-link {
         margin-top: 32px;
         display: flex;
         justify-content: center;
-    }
-    &-link {
         text-align: center;
         font-size: 18px;
         padding: 12px 32px;
