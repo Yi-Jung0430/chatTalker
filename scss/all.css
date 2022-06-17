@@ -753,7 +753,7 @@ sub {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .products {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -797,6 +797,7 @@ sub {
   }
   .products-link {
     margin-top: 16px;
+    text-align: center;
   }
   .products-card {
     padding: 24px;
@@ -1249,6 +1250,7 @@ sub {
   }
   .program-h3 {
     font-size: 28px;
+    line-height: 150%;
   }
   .program-number-list {
     margin-top: 24px;
@@ -1263,7 +1265,7 @@ sub {
     margin-right: 6px;
   }
   .program-number-card {
-    padding: 8px 16px;
+    padding: 0;
   }
   .program-list {
     margin-top: 32px;

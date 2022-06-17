@@ -494,20 +494,18 @@
     
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
     .products {
         flex-direction: column-reverse;
         margin-top: 60px;
         &-list {
             width: 100%;
-            
         }
         &-item {
             width: 100%;
             padding-right: 0;
             margin-right: 52px;
             margin-left: 52px;
-            
         }
         &-item:not(:first-child) {
             margin-top: 24px;
@@ -534,6 +532,7 @@
         }
         &-link {
             margin-top: 16px;
+            text-align: center;
         }
         &-card{
             padding: 24px;

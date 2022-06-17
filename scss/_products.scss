@@ -269,6 +269,7 @@
         overflow: hidden;
         &-h3 {
             font-size: 28px;
+            line-height: 150%;
     
         }
         &-number-list {
@@ -282,7 +283,7 @@
             margin-right: 6px;
         }
         &-number-card {
-            padding: 8px 16px;
+            padding: 0;
         }
         &-list {
             margin-top: 32px;
